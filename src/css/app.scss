@@ -1,1 +1,163 @@
 // app global css in SCSS form
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-thin-webfont.woff2') format('woff2'),
+    url('fonts/roboto-thin-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-light-webfont.woff2') format('woff2'),
+    url('fonts/roboto-light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('fonts/roboto-regular-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-medium-webfont.woff2') format('woff2'),
+    url('fonts/roboto-medium-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('fonts/roboto-bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto-black-webfont.woff2') format('woff2'),
+    url('fonts/roboto-black-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('fonts/spacemono-regular-webfont.woff2') format('woff2'),
+    url('fonts/spacemono-regular-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('fonts/spacemono-bold-webfont.woff2') format('woff2'),
+    url('fonts/spacemono-bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background-color: $twilight-blue;
+  font-family: $font-sans;
+  color: $frost-white;
+  font-size: 1.1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.3;
+}
+
+.q-dialog__backdrop {
+  background-color: $night-sky-gray-opacity !important;
+  backdrop-filter: blur(5px); // not 100% browser support
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.blur {
+  overflow: hidden;
+
+  & header {
+    background-color: transparent;
+  }
+
+  & main > * {
+    filter: blur(5px) brightness(0.7);
+    transition: $transition;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+:deep(.q-btn):hover,
+:deep(.q-btn):focus {
+  color: $turquoise-blast !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px 0;
+  font-weight: 900;
+  color: $frost-white;
+  line-height: 1.1;
+}
+
+.big-heading {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.medium-heading {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 60px);
+}
+
+.section-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 1rem);
+  white-space: nowrap;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $storm-gray $twilight-blue;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $twilight-blue;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $storm-gray;
+  border: 3px solid $twilight-blue;
+  border-radius: 10px;
+}
