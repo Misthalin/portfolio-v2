@@ -54,7 +54,7 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .experience-card {
-  max-width: 400px;
+  max-width: 550px;
   padding: 10px;
   margin: 0;
 }
@@ -116,13 +116,13 @@ a {
   color: $cloud-gray;
   font-weight: 300;
   font-family: $font-sans;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .technologies {
   color: $frost-white;
   font-family: $font-sans;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 </style>

@@ -8,5 +8,4 @@
 import LinesBg from './components/background/LinesBg.vue';
 </script>
 
-//
 <style scoped lang="scss"></style>

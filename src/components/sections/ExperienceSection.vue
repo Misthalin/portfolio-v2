@@ -1,12 +1,9 @@
 <template>
   <section id="experience">
-    <h2>
-      <!-- <span style="color: var(--darkest)">//</span>  -->
-      Experience
-    </h2>
+    <h2>Experience</h2>
     <div>
       <ExperienceCard
-        years="2023 - >"
+        years="2023 - Current"
         position="System Developer"
         companyLink="https://www.spk.no/"
         company="Statens Pensjonskasse"
@@ -58,7 +55,7 @@ h2 {
 div {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   width: 100%;
 }
 

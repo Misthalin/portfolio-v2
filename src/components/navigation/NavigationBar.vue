@@ -6,9 +6,19 @@
       <template v-if="!$q.screen.lt.md">
         <!-- Main navigation -->
         <div style="display: flex; flex-direction: row; gap: 25px">
-          <q-btn no-caps flat label="Experience" href="#experience" />
-          <q-btn no-caps flat label="Projects" href="#projects" />
-          <q-btn no-caps flat label="About" href="#about" />
+          <q-btn
+            no-caps
+            flat
+            label="Experience"
+            @click="scrollToTarget('experience')"
+          />
+          <q-btn
+            no-caps
+            flat
+            label="Projects"
+            @click="scrollToTarget('projects')"
+          />
+          <q-btn no-caps flat label="About" @click="scrollToTarget('about')" />
         </div>
 
         <!-- Social media -->
@@ -57,11 +67,17 @@ import {
   evaMenuOutline,
 } from '@quasar/extras/eva-icons';
 import { Ref, inject, onBeforeUnmount, onMounted, ref } from 'vue';
+import { scrollTo } from '@/utils/helpers';
 
 const contentWrapper = inject<Ref<HTMLElement | null>>('contentWrapper');
 const hidden = ref<boolean>(false);
 const lastScroll = ref<number>(0);
 const $q = useQuasar();
+
+function scrollToTarget(target: string) {
+  if (!contentWrapper?.value) return;
+  scrollTo(target, contentWrapper?.value);
+}
 
 function onMenuClick() {
   $q.dialog({

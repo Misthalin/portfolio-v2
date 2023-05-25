@@ -20,7 +20,7 @@
           flat
           dense
           :icon="evaCloseOutline"
-          style="margin-right: 28px"
+          style="margin-right: 40px"
           size="xl"
           @click="onCancel"
         />
@@ -34,7 +34,7 @@
             size="lg"
             padding="xl"
             label="Experience"
-            href="#experience"
+            @click="scrollToTarget('experience')"
             class="button"
           />
           <q-btn
@@ -43,7 +43,7 @@
             size="lg"
             padding="xl"
             label="Projects"
-            href="#projects"
+            @click="scrollToTarget('projects')"
             class="button"
           />
           <q-btn
@@ -52,7 +52,7 @@
             size="lg"
             padding="xl"
             label="About"
-            href="#about"
+            @click="scrollToTarget('about')"
             class="button"
           />
         </div>
@@ -97,11 +97,18 @@ import {
   evaGithubOutline,
   evaLinkedinOutline,
 } from '@quasar/extras/eva-icons';
-import { onMounted } from 'vue';
 import { useQuasar } from 'quasar';
+import { scrollTo } from '@/utils/helpers';
 import { useDialogPluginComponent } from 'quasar';
+import { onMounted } from 'vue';
 
 const $q = useQuasar();
+
+function scrollToTarget(target: string) {
+  const wrapper = document.getElementById('contentWrapper');
+  scrollTo(target, wrapper);
+  onCancel();
+}
 
 onMounted(() => {
   window.onresize = () => {

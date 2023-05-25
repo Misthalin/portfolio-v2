@@ -1,9 +1,12 @@
 <template>
-  <div class="content-wrapper" ref="contentWrapper">
+  <div class="content-wrapper" ref="contentWrapper" id="contentWrapper">
     <navigation-bar />
     <div class="main-view">
       <hero-section />
       <experience-section />
+      <project-section />
+      <contact-section />
+      <footer-section />
     </div>
   </div>
 </template>
@@ -12,6 +15,9 @@
 import NavigationBar from '@/components/navigation/NavigationBar.vue';
 import HeroSection from '@/components/sections/HeroSection.vue';
 import ExperienceSection from '@/components/sections/ExperienceSection.vue';
+import ProjectSection from '@/components/sections/ProjectSection.vue';
+import ContactSection from '@/components/sections/ContactSection.vue';
+import FooterSection from '@/components/sections/FooterSection.vue';
 import { useQuasar } from 'quasar';
 import { ref, provide } from 'vue';
 
