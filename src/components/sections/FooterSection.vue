@@ -7,7 +7,7 @@
       flat
       square
       no-caps
-      href="https://github.com/Misthalin/portfolio"
+      href="https://github.com/Misthalin/portfolio-v2"
       target="_blank"
     />
   </div>
