@@ -46,6 +46,7 @@
         square
         flat
         dense
+        aria-label="Menu"
         style="margin-right: -12px"
         :icon="evaMenuOutline"
         v-if="$q.screen.lt.md"
