@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="main">
     <div style="margin: 0 auto">
       <h1>Hi there! My name is</h1>
       <h2 class="big-heading">Adrian N. Riise.</h2>

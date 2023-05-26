@@ -73,7 +73,7 @@
           </template>
         </q-tab-panel>
       </q-tab-panels>
-      <div style="display: flex">
+      <div style="display: flex; margin-bottom: 15px">
         <q-btn
           stack
           square
@@ -146,7 +146,8 @@ function onCancel() {
   background-color: $deep-space-blue;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
+  max-height: 600px;
   width: 100vw;
   max-width: 950px;
 }
