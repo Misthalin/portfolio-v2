@@ -144,10 +144,9 @@ function onCancel() {
 <style scoped lang="scss">
 .modal-container {
   background-color: $deep-space-blue;
-  position: fixed;
-  bottom: 0;
-
-  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
   width: 100vw;
   max-width: 950px;
 }
@@ -166,6 +165,12 @@ function onCancel() {
 
 :deep(.q-tab-panels) {
   background-color: $deep-space-blue;
+  flex: 1;
+  overflow: auto;
+}
+
+:deep(.q-tabs) {
+  flex-shrink: 0;
 }
 
 .modal-header {
@@ -176,38 +181,4 @@ function onCancel() {
   justify-content: space-between;
   font-weight: 400;
 }
-
-// .sidebar {
-//   display: flex;
-//   position: fixed;
-//   flex-direction: column;
-//   gap: 5%;
-//   padding-bottom: 80px;
-//   right: 0;
-//   min-height: 100vh;
-//   width: min(80vw, 400px);
-//   background-color: $deep-space-blue;
-//   box-shadow: -10px 0px 30px -15px $midnight-blue;
-// }
-
-// nav {
-//   width: 100%;
-// }
-
-// .button {
-//   width: 100%;
-//   font-family: 'SpaceMono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-// }
-// :deep(.q-btn):hover,
-// :deep(.q-btn):focus {
-//   color: $turquoise-blast !important;
-// }
-
-// .container {
-//   margin: auto 0;
-// }
-
-// li:hover {
-//   color: $turquoise-blast;
-// }
 </style>

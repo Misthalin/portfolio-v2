@@ -9,6 +9,9 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
+a {
+  text-decoration: none;
+}
 .circle {
   width: 32px;
   height: 32px;
