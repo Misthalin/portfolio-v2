@@ -1,5 +1,6 @@
 <template>
   <div
+    :aria-label="`Read more about project: ${props.heading}`"
     class="project-card"
     @click="openModal"
     @keydown.enter="openModal"
