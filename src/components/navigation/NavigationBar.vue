@@ -27,6 +27,7 @@
             round
             flat
             :icon="evaGithubOutline"
+            aria-label="Visit my GitHub profile"
             href="https://github.com/misthalin"
             target="_blank"
             style="margin-right: 10px"
@@ -35,6 +36,7 @@
             round
             flat
             :icon="evaLinkedinOutline"
+            aria-label="Visit my LinkedIn profile"
             href="https://www.linkedin.com/in/adrianriise"
             target="_blank"
           />
