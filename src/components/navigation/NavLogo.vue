@@ -24,7 +24,7 @@ a {
   clip-path: circle(52% at 50% 50%);
   & span {
     font-family: Arial, Helvetica, sans-serif, Tahoma, Geneva, Verdana;
-    font-size: 2.5em;
+    font-size: 2.7em;
     font-weight: bold;
     color: $twilight-blue;
     border-radius: 50%;
