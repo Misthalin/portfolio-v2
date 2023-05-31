@@ -9,16 +9,24 @@
           <q-btn
             no-caps
             flat
+            padding="12px"
             label="Experience"
             @click="scrollToTarget('experience')"
           />
           <q-btn
             no-caps
             flat
+            padding="12px"
             label="Projects"
             @click="scrollToTarget('projects')"
           />
-          <q-btn no-caps flat label="About" @click="scrollToTarget('about')" />
+          <q-btn
+            no-caps
+            flat
+            padding="12px"
+            label="About"
+            @click="scrollToTarget('about')"
+          />
         </div>
 
         <!-- Social media -->
