@@ -57,6 +57,7 @@ const props = defineProps({
   max-width: 550px;
   padding: 10px;
   margin: 0;
+  background-color: $twilight-blue-opacity;
 }
 
 p {
