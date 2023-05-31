@@ -3,7 +3,7 @@
     <h2>Experience</h2>
     <div>
       <ExperienceCard
-        years="2023 - Current"
+        years="2023 - Present"
         position="System Developer"
         companyLink="https://www.spk.no/"
         company="Statens Pensjonskasse"

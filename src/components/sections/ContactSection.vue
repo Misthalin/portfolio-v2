@@ -3,8 +3,8 @@
     <div class="grid-container">
       <img
         src="@/assets/portrait.webp"
-        width="250"
-        height="250"
+        width="200"
+        height="200"
         alt="Portrait image of Adrian"
         class="portrait"
       />
@@ -148,7 +148,7 @@ section {
 }
 
 img {
-  border: 8px solid $deep-space-blue;
+  border: 2px solid $deep-space-blue;
 }
 
 .portrait {
