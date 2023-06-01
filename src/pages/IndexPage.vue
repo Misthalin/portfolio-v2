@@ -1,13 +1,13 @@
 <template>
   <div class="content-wrapper" ref="contentWrapper" id="contentWrapper">
     <navigation-bar />
-    <div class="main-view">
+    <main class="main-view">
       <hero-section />
       <experience-section />
       <project-section />
       <contact-section />
       <footer-section />
-    </div>
+    </main>
   </div>
 </template>
 
